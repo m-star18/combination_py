@@ -29,3 +29,6 @@ class Combination:
         if (n == 0 and r > 0) or r < 0:
             return 0
         return self.factorials[n + r - 1] * self.invs[r] % self.mod * self.invs[n - 1] % self.mod
+
+    def rising_factorial(self, n, r):
+        return self.factorials[n + r - 1] * self.invs[n - 1] % self.mod
