@@ -64,3 +64,10 @@ class Combination:
         for k in range(n):
             value += self.nCr(n + 1, k) * self.bernoulli(k) % self.mod
         return (- pow(n + 1, self.mod - 2, self.mod) * value) % self.mod
+
+    def faulhaber(self, k, n):
+        value = 0
+        for i in range(k + 1):
+            value += self.nCr(k + 1, i) * self.bernoulli(i) % self.mod
+            value *= pow(n, k - i + 1, self.mod) % self.mod
+        return pow(k + 1, self.mod - 2, self.mod) * value % self.mod
