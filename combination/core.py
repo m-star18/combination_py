@@ -54,3 +54,13 @@ class Combination:
             value += (-1) ** (k - m) * self.nCr(k, m) * pow(m, n, self.mod)
             value %= self.mod
         return value
+
+    def bernoulli(self, n):
+        if n == 0:
+            return 1
+        if n % 2 and n >= 3:
+            return 0
+        value = 0
+        for k in range(n):
+            value += self.nCr(n + 1, k) * self.bernoulli(k) % self.mod
+        return (- pow(n + 1, self.mod - 2, self.mod) * value) % self.mod
