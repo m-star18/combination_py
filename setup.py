@@ -18,3 +18,6 @@ def main():
         packages=['combination'],
         python_requires='>=3.6, <3.9'
     )
+
+
+main()
