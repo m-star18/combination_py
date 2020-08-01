@@ -14,3 +14,8 @@ class Combination:
             f *= i % mod
             invs.append(f)
         invs.reverse()
+
+    def C(self, n, r):
+        if not 0 <= r <= n:
+            return 0
+        return self.factorials[n] * self.invs[r] % self.mod * self.invs[n - r] % self.mod
