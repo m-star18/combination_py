@@ -16,5 +16,5 @@ def main():
         author='Ryusei Ito',
         author_email='31807@toyota.kosen-ac.jp',
         packages=['combination'],
-        install_requires=[],
+        python_requires='>=3.6, <3.9'
     )
