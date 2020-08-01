@@ -68,8 +68,7 @@ class Combination:
     def faulhaber(self, k, n):
         value = 0
         for i in range(k + 1):
-            value += self.nCr(k + 1, i) * self.bernoulli(i) % self.mod
-            value *= pow(n, k - i + 1, self.mod) % self.mod
+            value += self.nCr(k + 1, i) * self.bernoulli(i) % self.mod * pow(n, k - i + 1, self.mod) % self.mod
         return pow(k + 1, self.mod - 2, self.mod) * value % self.mod
 
     def lah(self, n, k):

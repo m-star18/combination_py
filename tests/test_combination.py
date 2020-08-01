@@ -34,6 +34,9 @@ class TestCombination(unittest.TestCase):
     def test_bernoulli(self):
         self.assertEqual(348484851, self.comb.bernoulli(10))
 
+    def test_faulhaber(self):
+        self.assertEqual(1108650, self.comb.faulhaber(10, 5))
+
 
 if __name__ == '__main__':
     unittest.main()
