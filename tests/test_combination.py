@@ -31,6 +31,9 @@ class TestCombination(unittest.TestCase):
     def test_balls_and_boxes_3(self):
         self.assertEqual(522986130, self.comb.balls_and_boxes_3(100, 50))
 
+    def test_bernoulli(self):
+        self.assertEqual(348484851, self.comb.bernoulli(10))
+
 
 if __name__ == '__main__':
     unittest.main()
