@@ -71,3 +71,13 @@ class Combination:
             value += self.nCr(k + 1, i) * self.bernoulli(i) % self.mod
             value *= pow(n, k - i + 1, self.mod) % self.mod
         return pow(k + 1, self.mod - 2, self.mod) * value % self.mod
+
+    def lah(self, n, k):
+        return self.nCr(n - 1, k - 1) * self.factorials[n] % self.mod * self.invs[k] % self.mod
+
+    def bell(self, n, k):
+        value = 0
+        for i in range(1, k + 1):
+            value += self.stirling_second(n, i)
+            value %= self.mod
+        return value
