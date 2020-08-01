@@ -40,6 +40,9 @@ class TestCombination(unittest.TestCase):
     def test_lah(self):
         self.assertEqual(292877136, self.comb.lah(100, 50))
 
+    def test_bell(self):
+        self.assertEqual(772898722, self.comb.bell(100, 50))
+
 
 if __name__ == '__main__':
     unittest.main()
