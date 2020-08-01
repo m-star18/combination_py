@@ -47,3 +47,10 @@ class Combination:
         for m in range(1, k + 1):
             value += (-1) ** (k - m) * self.nCr(k, m) * pow(m, n, self.mod)
         return self.invs[k] * value % self.mod
+
+    def balls_and_boxes_3(self, n, k):
+        value = 0
+        for m in range(1, k + 1):
+            value += (-1) ** (k - m) * self.nCr(k, m) * pow(m, n, self.mod)
+            value %= self.mod
+        return value
