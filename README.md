@@ -7,7 +7,7 @@ Python package for combination calculation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install combination_py.
 
 ```bash
-pip install combination_py
+pip install combination
 ```
 
 ## Usage
