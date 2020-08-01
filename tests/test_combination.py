@@ -22,6 +22,9 @@ class TestCombination(unittest.TestCase):
     def test_rising_factorial(self):
         self.assertEqual(646654562, self.comb.rising_factorial(100, 50))
 
+    def test_stirling_first(self):
+        self.assertEqual(269325, self.comb.stirling_first(10, 5))
+
 
 if __name__ == '__main__':
     unittest.main()
