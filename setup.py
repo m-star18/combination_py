@@ -10,7 +10,7 @@ def main():
         version='1.0.0',
         description='Python package for combination calculation',
         long_description=readme,
-        long_description_type='text/markdown',
+        long_description_content_type='text/markdown',
         url='https://github.com/m-star18/combination_py',
         license='Apache Software License 2.0',
         author='Ryusei Ito',
