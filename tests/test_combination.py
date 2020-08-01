@@ -25,6 +25,9 @@ class TestCombination(unittest.TestCase):
     def test_stirling_first(self):
         self.assertEqual(269325, self.comb.stirling_first(10, 5))
 
+    def test_stirling_second(self):
+        self.assertEqual(260006047, self.comb.stirling_second(100, 50))
+
 
 if __name__ == '__main__':
     unittest.main()
