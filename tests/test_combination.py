@@ -19,6 +19,9 @@ class TestCombination(unittest.TestCase):
     def test_nHr(self):
         self.assertEqual(475860182, self.comb.nHr(100, 50))
 
+    def test_rising_factorial(self):
+        self.assertEqual(646654562, self.comb.rising_factorial(100, 50))
+
 
 if __name__ == '__main__':
     unittest.main()
