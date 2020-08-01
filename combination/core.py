@@ -15,7 +15,12 @@ class Combination:
             invs.append(f)
         invs.reverse()
 
-    def C(self, n, r):
+    def nCr(self, n, r):
         if not 0 <= r <= n:
             return 0
         return self.factorials[n] * self.invs[r] % self.mod * self.invs[n - r] % self.mod
+
+    def nPr(self, n, r):
+        if not 0 <= r <= n:
+            return 0
+        return self.factorials[n] * self.invs[n - r] % self.mod
