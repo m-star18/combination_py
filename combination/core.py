@@ -24,3 +24,8 @@ class Combination:
         if not 0 <= r <= n:
             return 0
         return self.factorials[n] * self.invs[n - r] % self.mod
+
+    def nHr(self, n, r):
+        if (n == 0 and r > 0) or r < 0:
+            return 0
+        return self.factorials[n + r - 1] * self.invs[r] % self.mod * self.invs[n - 1] % self.mod
