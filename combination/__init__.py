@@ -1,3 +1,3 @@
 from combination import core
 
-combination = core.Combination
+Combination = core.Combination
