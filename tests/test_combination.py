@@ -37,6 +37,9 @@ class TestCombination(unittest.TestCase):
     def test_faulhaber(self):
         self.assertEqual(1108650, self.comb.faulhaber(10, 5))
 
+    def test_lah(self):
+        self.assertEqual(292877136, self.comb.lah(100, 50))
+
 
 if __name__ == '__main__':
     unittest.main()
