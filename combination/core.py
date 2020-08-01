@@ -32,3 +32,18 @@ class Combination:
 
     def rising_factorial(self, n, r):
         return self.factorials[n + r - 1] * self.invs[n - 1] % self.mod
+
+    def stirling_first(self, n, k):
+        if n == k:
+            return 1
+        if k == 0:
+            return 0
+        return (self.stirling_first(n - 1, k - 1) + (n - 1) * self.stirling_first(n - 1, k)) % self.mod
+
+    def stirling_second(self, n, k):
+        if n == k:
+            return 1
+        value = 0
+        for m in range(1, k + 1):
+            value += (-1) ** (k - m) * self.nCr(k, m) * pow(m, n, self.mod)
+        return self.invs[k] * value % self.mod
