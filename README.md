@@ -1,5 +1,20 @@
 # combination_py
 
+[![BuildStatus][build-status]][ci-server]
+[![PackageVersion][pypi-version]][pypi-home]
+[![Stable][pypi-status]][pypi-home]
+[![Format][pypi-format]][pypi-home]
+[![License][pypi-license]](LICENSE)
+
+[build-status]: https://travis-ci.com/m-star18/combination_py.svg?branch=master
+[ci-server]: https://travis-ci.org/m-star18/combination_py
+[pypi-version]: https://badge.fury.io/py/combination-py.svg
+[pypi-license]: https://img.shields.io/pypi/l/combination-py.svg
+[pypi-status]: https://img.shields.io/pypi/status/combination-py.svg
+[pypi-format]: https://img.shields.io/pypi/format/combination-py.svg
+[pypi-home]: https://badge.fury.io/py/combination-py
+[python-home]: https://python.org
+
 Python package for combination calculation
 
 ## Installation
@@ -7,7 +22,7 @@ Python package for combination calculation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install combination_py.
 
 ```bash
-pip install combination
+pip install combination-py
 ```
 
 ## Usage
