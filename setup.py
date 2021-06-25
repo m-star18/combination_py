@@ -6,8 +6,8 @@ def main():
         readme = fp.read()
 
     setuptools.setup(
-        name='combination_py',
-        version='1.0.0',
+        name='combination-py',
+        version='1.0.1',
         description='Python package for combination calculation',
         long_description=readme,
         long_description_content_type='text/markdown',
