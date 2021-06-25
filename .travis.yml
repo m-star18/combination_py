@@ -9,4 +9,4 @@ install:
   - pip install combination
 # command to run tests
 script:
-  - pytest
+  - python tests/test_combination.py
